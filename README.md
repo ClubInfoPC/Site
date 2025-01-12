@@ -1,6 +1,6 @@
 # Site Web du Club Informatique
 
-Pour répandre l'existence du club informatique:
+Pour répandre l'existence du club informatique (quand vous faites un prospectus, mettez le qr code dans vers le site web aussi):
 - Faire des prospectus avec une photo d'un projet réelement réalisé dans le club ou grâce à celui-ci
 - Faire des envoies de mail qui demande un profil spécifique (codeur de site web, pro en osint par exemple)
 
