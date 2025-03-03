@@ -6,36 +6,12 @@
     <title>Club Informatique</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Barre de navigation -->
-    <nav class="navbar">
-        <div class="nav-logo">
-            <img src="images/LOGO 2023 Lycée du Golfe.jpg" alt="Logo" class="nav-logo-img">
-        </div>
-        <div class="nav-links">
-            <a href="#accueil">Accueil</a>
-            <a href="#presentation">À propos</a>
-            <a href="#projets">Projets</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <button id="theme-toggle" class="theme-toggle">
-            <i class="fas fa-moon"></i>
-        </button>
-    </nav>
-
-    <!-- Hero Section -->
-    <header id="accueil" class="hero">
-        <div class="hero-content">
-            <h1>Club Informatique</h1>
-            <p class="header-subtitle">Du Lycée du Golfe de Saint-Tropez</p>
-            <div class="hero-cta">
-                <a href="#formulaire" class="primary-button">Demander un PC</a>
-                <a href="#presentation" class="secondary-button">En savoir plus</a>
-            </div>
-        </div>
+    <!-- Entête avec le nom du club -->
+    <header>
+        <h1>Club Informatique</h1>
+        <p class="header-subtitle">Du Lycée du Golfe de Saint-Tropez</p>
     </header>
 
     <!-- Section logo du lycée -->
@@ -46,191 +22,54 @@
     </section>
 
     <!-- Section présentation du club -->
-    <section id="presentation" class="section-padding">
-        <div class="container">
-            <h2 class="section-title">À propos du Club</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>Le Club Informatique est un groupe passionné par l'informatique et la technologie. Nous nous réunissons pour partager nos connaissances, travailler sur des projets innovants et aider la communauté.</p>
-                    <ul class="features-list">
-                        <li><i class="fas fa-laptop"></i> Formation technique</li>
-                        <li><i class="fas fa-users"></i> Communauté active</li>
-                        <li><i class="fas fa-tools"></i> Projets pratiques</li>
-                        <li><i class="fas fa-heart"></i> Engagement social</li>
-                    </ul>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <h3>20+</h3>
-                        <p>PC Donnés</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>15+</h3>
-                        <p>Membres Actifs</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>5+</h3>
-                        <p>Projets Réalisés</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="presentation">
+        <h2>À propos du Club</h2>
+        <p>Le Club Informatique est un groupe passionné par l'informatique et la technologie. Nous nous réunissons pour partager nos connaissances, travailler sur des projets innovants et aider la communauté.</p>
     </section>
 
     <!-- Section Google Form pour les demandes -->
-    <section id="formulaire" class="section-padding highlight-section">
-        <div class="container">
-            <h2 class="section-title">Besoin d'un PC Gratuit ?</h2>
-            <p class="section-description">Nous donnons des ordinateurs gratuitement aux personnes qui en ont besoin. Vous pouvez aussi rejoindre notre club !</p>
-            <div class="cta-container">
-                <a href="https://forms.gle/GFkRWejTQyq9hL3H9" target="_blank" class="cta-button">
-                    Demander un PC Gratuit <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
+    <section id="formulaire">
+        <h2>Besoin d'un PC Gratuit ?</h2>
+        <p>Nous donnons des ordinateurs gratuitement aux personnes qui en ont besoin. Vous pouvez aussi rejoindre notre club !</p>
+        <a href="https://forms.gle/GFkRWejTQyq9hL3H9" target="_blank" class="cta-button">
+            Demander un PC Gratuit →
+        </a>
     </section>
 
     <!-- Section projets du club -->
-    <section id="projets" class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Nos Projets Principaux</h2>
-            <div class="projets-grid">
-                <div class="projet-card">
-                    <div class="projet-icon">
-                        <i class="fas fa-desktop"></i>
-                    </div>
-                    <h3>Don de PC</h3>
-                    <p>Réalisés plusieurs fois, un don à travers de multiples pays pour aider ceux qui n'en n'ont pas.</p>
-                    <div class="projet-stats">
-                        <span>20+ PC donnés</span>
-                        <span>5+ pays</span>
-                    </div>
-                </div>
-                <div class="projet-card">
-                    <div class="projet-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Réparation de Laptops</h3>
-                    <p>Matheus, l'un des membres les plus actifs du club à en seulement une semaine tester une vingtaine de pc portable.</p>
-                    <div class="projet-stats">
-                        <span>20+ réparations</span>
-                        <span>1 semaine</span>
-                    </div>
-                </div>
-                <div class="projet-card">
-                    <div class="projet-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Serveur NAS</h3>
-                    <p>En cours de progrès, à la recherche de savoir comment faire marcher le nas doté de Truenas.</p>
-                    <div class="projet-status">
-                        <span class="status-badge">En cours</span>
-                    </div>
-                </div>
+    <section id="projets">
+        <h2>Nos Projets Principaux</h2>
+        <div class="projets-grid">
+            <div class="projet-card">
+                <h3>Don de PC</h3>
+                <p>Réalisés plusieurs fois, un don à travers de multiples pays pour aider ceux qui n'en n'ont pas.</p>
+            </div>
+            <div class="projet-card">
+                <h3>Réparation de Laptops</h3>
+                <p>Matheus, l'un des membres les plus actifs du club à en seulement une semaine tester une vingtaine de pc portable.</p>
+            </div>
+            <div class="projet-card">
+                <h3>Serveur NAS</h3>
+                <p>En cours de progrès, à la recherche de savoir comment faire marcher le nas doté de Truenas.</p>
             </div>
         </div>
     </section>
 
     <!-- Portfolio des membres -->
-    <section id="portfolio" class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Le Portfolio de nos Membres</h2>
-            <div class="membres-grid">
-                <div class="membre-card">
-                    <div class="membre-image">
-                        <img src="images/nathan.jpg" alt="Nathan">
-                    </div>
-                    <div class="membre-info">
-                        <h4>Nathan</h4>
-                        <p class="membre-role">Développeur Web</p>
-                        <p>Nathan a codé le début du site web que vous voyez.</p>
-                        <div class="membre-social">
-                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Template pour futurs membres -->
-                <div class="membre-card add-member">
-                    <div class="add-member-content">
-                        <i class="fas fa-plus-circle"></i>
-                        <p>Rejoignez notre équipe</p>
-                    </div>
-                </div>
+    <section id="portfolio">
+        <h2>Le Portfolio de nos Membres</h2>
+        <div class="membres-grid">
+            <div class="membre">
+                <img src="images/nathan.jpg" alt="Nathan">
+                <h4>Nathan</h4>
+                <p>Nathan a codé le début du site web que vous voyez.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Section FAQ -->
-    <section id="faq" class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Questions Fréquentes</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>Comment rejoindre le club ?</h3>
-                    <p>Contactez-nous via le formulaire ou venez nous voir directement au lycée.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Quand ont lieu les réunions ?</h3>
-                    <p>Les réunions se tiennent régulièrement, contactez-nous pour plus d'informations.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Qui peut demander un PC ?</h3>
-                    <p>Toute personne dans le besoin peut faire une demande via notre formulaire.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Contact -->
-    <section id="contact" class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Contactez-nous</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Lycée du Golfe de Saint-Tropez</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>club.informatique@lyceedugolfe.fr</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
+            <!-- Ajoute d'autres membres selon besoin -->
         </div>
     </section>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Club Informatique</h4>
-                <p>Lycée du Golfe de Saint-Tropez</p>
-            </div>
-            <div class="footer-section">
-                <h4>Liens Rapides</h4>
-                <a href="#accueil">Accueil</a>
-                <a href="#presentation">À propos</a>
-                <a href="#projets">Projets</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="footer-section">
-                <p>&copy; 2025 Club Informatique - Tous droits réservés</p>
-            </div>
-        </div>
+        <p>&copy; 2025 Club Informatique - Lycée du Golfe de Saint-Tropez</p>
     </footer>
-
-    <!-- Bouton retour en haut -->
-    <button id="back-to-top" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Script JavaScript -->
-    <script src="script.js"></script>
 </body>
 </html>
