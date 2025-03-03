@@ -4,26 +4,43 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --accent-color: #3b82f6;
+    --text-color: #1f2937;
+    --background-light: #f8fafc;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
 header {
-    background-color: #0044cc;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 2.5rem 1rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--card-shadow);
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.5rem;
 }
 
 h2 {
-    color: #0044cc;
-    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
 }
 
 img {
@@ -32,11 +49,17 @@ img {
 }
 
 section {
-    padding: 20px;
-    margin: 20px;
+    padding: 2.5rem;
+    margin: 2rem auto;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    max-width: 1200px;
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-2px);
 }
 
 button {
@@ -72,19 +95,151 @@ ul li {
 }
 
 .membre img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-right: 20px;
+    object-fit: cover;
+    border: 4px solid var(--accent-color);
 }
 
+.membre h4 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #0044cc;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
-    position: fixed;
-    bottom: 0;
+    margin-top: 4rem;
+}
+
+.lycee-section {
+    padding: 0;
+    overflow: hidden;
+}
+
+.logo-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.lycee-logo {
     width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.lycee-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.lycee-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    padding: 20px;
+    color: white;
+}
+
+.lycee-overlay h2 {
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Style amélioré pour le bouton du formulaire */
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* Style pour les projets */
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.projet-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-5px);
+}
+
+.projet-card h3 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Style pour le portfolio */
+.membres-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.membre {
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-top: 0.5rem;
 }

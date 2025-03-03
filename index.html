@@ -5,60 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Club Informatique</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Entête avec le nom du club -->
     <header>
         <h1>Club Informatique</h1>
+        <p class="header-subtitle">Du Lycée du Golfe de Saint-Tropez</p>
     </header>
+
+    <!-- Section logo du lycée -->
+    <section id="lycee" class="lycee-section">
+        <div class="logo-container">
+            <img src="images/LOGO 2023 Lycée du Golfe.jpg" alt="Logo du Lycée du Golfe de Saint-Tropez" class="lycee-logo">
+        </div>
+    </section>
 
     <!-- Section présentation du club -->
     <section id="presentation">
         <h2>À propos du Club</h2>
-        <p>Le Club Informatique est un groupe passionné par l'informatique et la technologie.</p>
+        <p>Le Club Informatique est un groupe passionné par l'informatique et la technologie. Nous nous réunissons pour partager nos connaissances, travailler sur des projets innovants et aider la communauté.</p>
     </section>
 
     <!-- Section Google Form pour les demandes -->
     <section id="formulaire">
-        <h2>Demande d'adhésion ou PC gratuit</h2>
-        <p>Si vous souhaitez rejoindre notre club ou si vous avez besoin d'un PC gratuit, remplissez ce formulaire :</p>
-        <a href="https://forms.gle/GFkRWejTQyq9hL3H9" target="_blank">
-            <button>Accéder au formulaire</button>
+        <h2>Besoin d'un PC Gratuit ?</h2>
+        <p>Nous donnons des ordinateurs gratuitement aux personnes qui en ont besoin. Vous pouvez aussi rejoindre notre club !</p>
+        <a href="https://forms.gle/GFkRWejTQyq9hL3H9" target="_blank" class="cta-button">
+            Demander un PC Gratuit →
         </a>
     </section>
 
     <!-- Section projets du club -->
     <section id="projets">
         <h2>Nos Projets Principaux</h2>
-        <ul>
-            <li>
-                <h3>Projet 1 : Don de pc à ceux qui n'en n'ont pas</h3>
+        <div class="projets-grid">
+            <div class="projet-card">
+                <h3>Don de PC</h3>
                 <p>Réalisés plusieurs fois, un don à travers de multiples pays pour aider ceux qui n'en n'ont pas.</p>
-            </li>
-            <li>
-                <h3>Projet 2 : Réparation d'une vingtaine de laptops cassés</h3>
+            </div>
+            <div class="projet-card">
+                <h3>Réparation de Laptops</h3>
                 <p>Matheus, l'un des membres les plus actifs du club à en seulement une semaine tester une vingtaine de pc portable.</p>
-            </li>
-            <li>
-                <h3>Projet 3 : Création d'un serveur nas, comment Google drive mais c'est à nous, en cours de progression</h3>
+            </div>
+            <div class="projet-card">
+                <h3>Serveur NAS</h3>
                 <p>En cours de progrès, à la recherche de savoir comment faire marcher le nas doté de Truenas.</p>
-            </li>
-        </ul>
+            </div>
+        </div>
     </section>
 
     <!-- Portfolio des membres -->
     <section id="portfolio">
         <h2>Le Portfolio de nos Membres</h2>
-        <div class="membre">
-            <img src="images/nathan.jpg" alt="Nathan">
-            <h4>Nathan</h4>
-            <p>Nathan a codé le début du site web que vous voyez.</p>
+        <div class="membres-grid">
+            <div class="membre">
+                <img src="images/nathan.jpg" alt="Nathan">
+                <h4>Nathan</h4>
+                <p>Nathan a codé le début du site web que vous voyez.</p>
+            </div>
+            <!-- Ajoute d'autres membres selon besoin -->
         </div>
-        <!-- Ajoute d'autres membres selon besoin -->
     </section>
 
     <footer>
-        <p>&copy; 2025 Club Informatique - Tous droits réservés</p>
+        <p>&copy; 2025 Club Informatique - Lycée du Golfe de Saint-Tropez</p>
     </footer>
 </body>
 </html>
