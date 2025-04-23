@@ -3,73 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club Informatique</title>
+    <title>Club Informatique - Lycée du Golfe</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Entête avec le nom du club -->
-    <header>
-        <h1>Club Informatique</h1>
-        <p class="header-subtitle">Du Lycée du Golfe de Saint-Tropez</p>
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-logo">
+            <img src="images/LOGO 2023 Lycée du Golfe.jpg" alt="Logo" class="nav-logo-img">
+        </div>
+        <div class="nav-links">
+            <a href="#accueil">Accueil</a>
+            <a href="#presentation">À propos</a>
+            <a href="#projets">Projets</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="accueil">
+        <div class="hero-content fade-up">
+            <span class="badge">Club Informatique 2024</span>
+            <h1>Innovons Ensemble<br>pour l'Avenir</h1>
+            <p class="header-subtitle">Rejoignez le Club Informatique du Lycée du Golfe de Saint-Tropez et participez à des projets innovants qui changent des vies.</p>
+            <div class="hero-buttons">
+                <a href="#formulaire" class="cta-button">Demander un PC <i class="fas fa-laptop"></i></a>
+                <a href="#presentation" class="secondary-button">En savoir plus <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
     </header>
 
     <!-- Section logo du lycée -->
-    <section id="lycee" class="lycee-section">
+    <section id="lycee" class="lycee-section fade-up">
         <div class="logo-container">
             <img src="images/LOGO 2023 Lycée du Golfe.jpg" alt="Logo du Lycée du Golfe de Saint-Tropez" class="lycee-logo">
+            <h2 class="text-gradient">Lycée du Golfe de Saint-Tropez</h2>
         </div>
     </section>
 
     <!-- Section présentation du club -->
-    <section id="presentation">
+    <section id="presentation" class="fade-up">
         <h2>À propos du Club</h2>
-        <p>Le Club Informatique est un groupe passionné par l'informatique et la technologie. Nous nous réunissons pour partager nos connaissances, travailler sur des projets innovants et aider la communauté.</p>
+        <div class="about-grid">
+            <div class="about-content">
+                <p class="lead-text">Le Club Informatique est un groupe passionné par l'informatique et la technologie. Nous nous réunissons pour partager nos connaissances, travailler sur des projets innovants et aider la communauté.</p>
+                <div class="features">
+                    <div class="feature-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Apprentissage Pratique</h3>
+                        <p>Développez vos compétences techniques avec des projets concrets</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Communauté Active</h3>
+                        <p>Rejoignez une communauté dynamique et passionnée</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-heart"></i>
+                        <h3>Impact Social</h3>
+                        <p>Participez à des projets qui font la différence</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">PC Donnés</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Membres Actifs</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Projets Réalisés</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Section Google Form pour les demandes -->
-    <section id="formulaire">
-        <h2>Besoin d'un PC Gratuit ?</h2>
-        <p>Nous donnons des ordinateurs gratuitement aux personnes qui en ont besoin. Vous pouvez aussi rejoindre notre club !</p>
-        <a href="https://forms.gle/GFkRWejTQyq9hL3H9" target="_blank" class="cta-button">
-            Demander un PC Gratuit →
-        </a>
+    <!-- Section formulaire -->
+    <section id="formulaire" class="highlight-section fade-up">
+        <div class="form-content">
+            <h2>Besoin d'un PC Gratuit ?</h2>
+            <p class="section-subtitle">Nous donnons des ordinateurs gratuitement aux personnes qui en ont besoin. Vous pouvez aussi rejoindre notre club !</p>
+            <a href="https://forms.gle/GFkRWejTQyq9hL3H9" target="_blank" class="cta-button">
+                Demander un PC Gratuit <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
     </section>
 
-    <!-- Section projets du club -->
-    <section id="projets">
+    <!-- Section projets -->
+    <section id="projets" class="fade-up">
         <h2>Nos Projets Principaux</h2>
         <div class="projets-grid">
             <div class="projet-card">
+                <div class="projet-icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
                 <h3>Don de PC</h3>
                 <p>Réalisés plusieurs fois, un don à travers de multiples pays pour aider ceux qui n'en n'ont pas.</p>
+                <div class="projet-stats">
+                    <span>20+ PC donnés</span>
+                    <span>5+ pays</span>
+                </div>
             </div>
             <div class="projet-card">
+                <div class="projet-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
                 <h3>Réparation de Laptops</h3>
                 <p>Matheus, l'un des membres les plus actifs du club à en seulement une semaine tester une vingtaine de pc portable.</p>
+                <div class="projet-stats">
+                    <span>20+ réparations</span>
+                    <span>1 semaine</span>
+                </div>
             </div>
             <div class="projet-card">
+                <div class="projet-icon">
+                    <i class="fas fa-server"></i>
+                </div>
                 <h3>Serveur NAS</h3>
                 <p>En cours de progrès, à la recherche de savoir comment faire marcher le nas doté de Truenas.</p>
+                <div class="projet-status">
+                    <span class="status-badge">En cours</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio des membres -->
-    <section id="portfolio">
+    <section id="portfolio" class="fade-up">
         <h2>Le Portfolio de nos Membres</h2>
         <div class="membres-grid">
             <div class="membre">
-                <img src="images/nathan.jpg" alt="Nathan">
-                <h4>Nathan</h4>
-                <p>Nathan a codé le début du site web que vous voyez.</p>
+                <div class="membre-image">
+                    <img src="images/nathan.jpg" alt="Nathan">
+                </div>
+                <div class="membre-info">
+                    <h4>Nathan</h4>
+                    <p class="membre-role">Développeur Web</p>
+                    <p>Nathan a codé le début du site web que vous voyez.</p>
+                    <div class="membre-social">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-            <!-- Ajoute d'autres membres selon besoin -->
+            <div class="membre add-member">
+                <div class="add-member-content">
+                    <i class="fas fa-plus-circle"></i>
+                    <p>Rejoignez notre équipe</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Club Informatique - Lycée du Golfe de Saint-Tropez</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Club Informatique</h4>
+                <p>Lycée du Golfe de Saint-Tropez</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <a href="#accueil">Accueil</a>
+                <a href="#presentation">À propos</a>
+                <a href="#projets">Projets</a>
+                <a href="#portfolio">Portfolio</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Lycée du Golfe de Saint-Tropez</p>
+                <p><i class="fas fa-envelope"></i> club.informatique@lyceedugolfe.fr</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Club Informatique - Tous droits réservés</p>
+        </div>
     </footer>
+
+    <!-- Bouton retour en haut -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>

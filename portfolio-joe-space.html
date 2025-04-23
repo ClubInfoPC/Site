@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>Portfolio de Joe</title>
+    <style>
+        /* Space background styles */
+        body {
+            background: #000;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #fff;
+            border-radius: 50%;
+            animation: twinkle 2s linear infinite;
+        }
+
+        @keyframes twinkle {
+            0% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Your portfolio content goes here -->
+    <header>
+        <h1>Portfolio de Joe</h1>
+        <p>Il peut parler 4 langues mais reste un paresseux.</p>
+        <p>Appuie sur la lunne :D</p>
+        <button id="night-mode-toggle" aria-label="Toggle Night Mode">🌙</button> <!-- Night Mode Button -->
+    </header>
+
+    <section>
+        <h2>Salut, ici les projets réalisés en NSI.</h2>
+        <div class="projets-grid">
+            <div class="projet-card">
+                <h3>Programmation d'un jeu en python</h3>
+                <p>Par example un jeu du pendu avec une vaste selection de modes et langues</p>
+            </div>
+
+            <div class="projet-card">
+                <h3>Création d'un système de codage</h3>
+                <p>Multiples exercices comme un programme pour un code cesar.</p>
+            </div>
+
+            <div class="projet-card">
+                <h3>Réalisation d'un site web</h3>
+                <p>Réalizé le site que vous êtes entrain de voir avec Nathan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projets de la vie.</h2>
+        <div class="projets-grid">
+            <div class="projet-card">
+                <h3>Musique</h3>
+                <p>Guitariste depuis 8 ans avec quelques chansons originales.</p>
+            </div>
+
+            <div class="projet-card">
+                <h3>L'art</h3>
+                <p>Artiste numérique et tatoueur débutant.</p>
+            </div>
+
+            <div class="projet-card">
+                <h3>Langages</h3>
+                <p>Parle couramment l'anglais, le portugais, le français et l'espagnol intermédiaire.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contacter nous sur notre adress email pour n'importe quel question : contact.clubinfopc@gmail.com</p>
+        <p>&copy; 2025 Club Informatique - Lycée du Golfe de Saint-Tropez</p>
+        <button id="bouton">Cliquez-moi</button>
+    </footer>
+
+    <script>
+        // 1. Sélectionner le bouton correctement
+        var num = 0;
+        const bouton = document.querySelector('#bouton');
+
+        // 2. Ajouter un écouteur d'événement
+        bouton.addEventListener('click', () => {
+            num += 1;
+            bouton.textContent = num;
+
+            // 4. Manipuler les styles CSS
+            bouton.style.backgroundColor = bouton.style.backgroundColor === 'red' ? '' : 'red';
+        });
+
+        // Night Mode Toggle Script
+        const nightModeButton = document.getElementById('night-mode-toggle');
+        nightModeButton.addEventListener('click', () => {
+            document.body.classList.toggle('night-mode'); // Toggle the 'night-mode' class on body
+            // Change button icon based on night mode
+            if (document.body.classList.contains('night-mode')) {
+                nightModeButton.textContent = '🌞'; // Sun icon for day mode
+            } else {
+                nightModeButton.textContent = '🌙'; // Moon icon for night mode
+            }
+        });
+
+    </script>
+
+    <script src="portfolio-joe-space.js"></script>
+</body>
+
+</html>

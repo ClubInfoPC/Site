@@ -1,0 +1,12 @@
+{
+  "name": "site-dev",
+  "version": "1.0.0",
+  "description": "Website development project with test suite",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+} 

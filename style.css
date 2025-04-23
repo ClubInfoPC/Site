@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -78,6 +79,11 @@ button:hover {
 
 #formulaire a {
     text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 ul {
@@ -219,27 +225,62 @@ footer {
     padding: 1.5rem;
     background: white;
     border-radius: 1rem;
+    height: 100%;
     box-shadow: var(--card-shadow);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    section {
-        margin: 1rem;
-        padding: 1.5rem;
-    }
-    
-    h1 {
-        font-size: 2em;
-    }
-    
-    h2 {
-        font-size: 1.5em;
-    }
+/* Night Mode Styles */
+.night-mode {
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
-.header-subtitle {
-    font-size: 1.2rem;
-    opacity: 0.9;
-    margin-top: 0.5rem;
+.night-mode header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+}
+
+.night-mode .cta-button {
+    background: linear-gradient(135deg, #1e40af, #2563eb);
+    box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+}
+
+.night-mode section {
+    background-color: #1f2937;
+    color: #e0e0e0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.night-mode footer {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: #e0e0e0;
+}
+
+.night-mode .projet-card,
+.night-mode .membre {
+    background: #2d3748;
+    color: #e0e0e0;
+}
+
+.night-mode .membre h4,
+.night-mode h2,
+.night-mode h3 {
+    color: #2563eb;
+}
+
+.night-mode button {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.night-mode button:hover {
+    background-color: #444;
+}
+
+.night-mode .lycee-logo {
+    filter: brightness(0.8);
+}
+
+.night-mode #night-mode-toggle {
+    content: '🌞';
+    /* Change the button to display a sun when in night mode */
 }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>Portfolio de Nathan</title>
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio de Nathan</h1>
+        <p>Parfois on se demande si c'est un humain.</p>
+        <button id="night-mode-toggle" aria-label="Toggle Night Mode">🌙</button> <!-- Night Mode Button -->
+    </header>
+
+    <section>
+        <h2>Salut, ici les projets réalisés en NSI.</h2>
+        <div class="projets-grid">
+            <div class="projet-card">
+                <h3>Programmation d'un jeu en python</h3>
+                <p>Réalisés plusieurs fois, un don à travers de multiples pays pour aider ceux qui n'en n'ont pas.</p>
+            </div>
+
+            <div class="projet-card">
+                <h3>Création d'un système de codage</h3>
+                <p>Réalisés plusieurs fois, un don à travers de multiples pays pour aider ceux qui n'en n'ont pas.</p>
+            </div>
+
+            <div class="projet-card">
+                <h3>Réalisation d'un site web</h3>
+                <p>Réalisés plusieurs fois, un don à travers de multiples pays pour aider ceux qui n'en n'ont pas.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Contacter nous sur notre adress email pour n'importe quel question : contact.clubinfopc@gmail.com</p>
+        <p>&copy; 2025 Club Informatique - Lycée du Golfe de Saint-Tropez</p>
+        <button id="bouton">Cliquez-moi</button>
+    </footer>
+    <!-- Votre contenu HTML ici -->
+    <script>
+        // 1. Sélectionner le bouton correctement
+        var num = 0;
+        const bouton = document.querySelector('#bouton');
+
+        // 2. Ajouter un écouteur d'événement
+        bouton.addEventListener('click', () => {
+            num += 1;
+            bouton.textContent = num;
+
+            // 4. Manipuler les styles CSS
+            bouton.style.backgroundColor = bouton.style.backgroundColor === 'red' ? '' : 'red';
+        });
+
+        // Night Mode Toggle Script
+        const nightModeButton = document.getElementById('night-mode-toggle');
+        nightModeButton.addEventListener('click', () => {
+            document.body.classList.toggle('night-mode'); // Toggle the 'night-mode' class on body
+            // Change button icon based on night mode
+            if (document.body.classList.contains('night-mode')) {
+                nightModeButton.textContent = '🌞'; // Sun icon for day mode
+            } else {
+                nightModeButton.textContent = '🌙'; // Moon icon for night mode
+            }
+        });
+    </script>
+</body>
+
+</html>
